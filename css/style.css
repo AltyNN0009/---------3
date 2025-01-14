@@ -1,0 +1,114 @@
+.header {
+    background-color: #2EC600;
+}
+
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.container_header {
+    display: flex;
+    padding: 27px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+}
+
+.nav_item {
+    margin-right: 40px;
+
+}
+
+.hero-block {
+    background-color: #603400;
+}
+
+.container_hero-block {
+    display: flex;
+    padding: 90px 0 91px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero-block_content {
+    max-width: 546px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.hero-block_text {
+    font-family: "RocknRoll One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #E4E4E4;
+    font-size: 20px;
+    margin-bottom: 65px;
+}
+
+.hero-block_link {
+    background: rgb(255, 35, 57);
+    background: linear-gradient(90deg, rgba(255, 35, 57, 1) 0%, rgba(168, 233, 89, 1) 50%, rgba(13, 122, 251, 1) 100%);
+    padding: 33px 95px;
+    border-radius: 6px;
+
+}
+
+.about {
+    background-color: #603400;
+}
+
+.container_about {
+    padding: 90px 0 91px;
+}
+
+.about_content {
+    display: flex;
+}
+
+.about_title {
+    color: #E4E4E4;
+    font-size: 48px;
+    text-align: center;
+}
+
+.about_imgs {
+    margin-left: 170px;
+}
+
+.about_text {
+    color: #E4E4E4;
+    font-size: 16px;
+}
+
+.about_img {
+    margin-bottom: 76px;
+}
+
+.video {
+    background-color: #603400;
+}
+
+.container_video {
+    padding: 90px 0 91px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video_title{
+    color: #E4E4E4;
+    text-align: center;
+    font-size: 48px;
+}
+
+.video_player{
+    margin-left: 10%;
+}
+  
