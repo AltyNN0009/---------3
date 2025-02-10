@@ -102,13 +102,21 @@
     align-items: center;
 }
 
-.video_title{
+.video_title {
     color: #E4E4E4;
     text-align: center;
     font-size: 48px;
 }
 
-.video_player{
+.video_player {
     margin-left: 10%;
 }
-  
+
+.nav_link {
+    color:#003f9c;
+    transition: 0.2s;
+}
+
+.nav_link:hover{
+    color: aquamarine;
+}
