@@ -62,10 +62,10 @@
                         2014 году корпорация Microsoft приобрела права на Minecraft вместе со студией Mojang AB за 2,5
                         миллиарда долларов. В 2017 году была выпущена мультиплатформенная версия игры, объединившая
                         различные версии для разных устройств</p>
-                        <div class="about_imgs">
-                            <img src="img/image.png" alt="" class="about_img">
-                            <img src="img/weapons-13.png" alt="" class="about_img2">
-                        </div>
+                    <div class="about_imgs">
+                        <img src="img/image.png" alt="" class="about_img">
+                        <img src="img/weapons-13.png" alt="" class="about_img2">
+                    </div>
                 </div>
             </div>
 
@@ -81,7 +81,39 @@
 
             </div>
         </section>
+        <button class="scrollToTopBtn" id="scrollToTopBtn">наверх</button>
     </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+            // Показываем кнопку при прокрутке вниз
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.style.display = "block";
+                } else {
+                    scrollToTopBtn.style.display = "none";
+                }
+            });
+
+            // Плавная анимация прокрутки
+            function smoothScrollToTop() {
+                let position = window.scrollY;
+                if (position > 0) {
+                    window.scrollBy(0, -Math.max(10, position / 10)); // Уменьшаем скорость ближе к верху
+                    requestAnimationFrame(smoothScrollToTop);
+                }
+            }
+
+            // При клике запускаем анимацию
+            scrollToTopBtn.addEventListener("click", function () {
+                requestAnimationFrame(smoothScrollToTop);
+            });
+        });
+
+
+    </script>
+
 </body>
 
 </html>

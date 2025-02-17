@@ -126,3 +126,31 @@
     color: aquamarine;
 }
 
+#scrollToTopBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 174, 255);
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
