@@ -143,6 +143,47 @@
     color: aquamarine;
 }
 
+.footer {
+    background-color: #53240B;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 52px;
+}
+
+.footer_name {
+    color: aliceblue;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.footer_text {
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.footer_list {
+    display: flex;
+    list-style: none;
+}
+
+.footer_item {
+    margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
 #scrollToTopBtn{
     position: fixed;
     bottom: 20px;
