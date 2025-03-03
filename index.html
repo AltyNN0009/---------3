@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lightzoom/style.css" type="text/css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,7 +42,7 @@
         </section>
         <section class="about">
             <div class="container container_about">
-                <h1 class="about_title">Об игре</h1>
+                <h1 class="title about_title">Об игре</h1>
                 <div class="about_content">
                     <p class="about_text">Minecraft (от англ. mine — «шахта; добывать» + craft — «ремесло; создавать») —
                         компьютерная инди-игра в жанре песочницы, созданная шведским программистом Маркусом Перссоном и
@@ -61,26 +64,53 @@
                         2014 году корпорация Microsoft приобрела права на Minecraft вместе со студией Mojang AB за 2,5
                         миллиарда долларов. В 2017 году была выпущена мультиплатформенная версия игры, объединившая
                         различные версии для разных устройств</p>
-                        <div class="about_imgs">
-                            <img src="img/image.png" alt="" class="about_img">
-                            <img src="img/weapons-13.png" alt="" class="about_img2">
-                        </div>
+                    <div class="about_imgs">
+                        <img src="img/image.png" alt="" class="about_img">
+                        <img src="img/weapons-13.png" alt="" class="about_img2">
+                    </div>
                 </div>
             </div>
 
         </section>
         <section class="video">
             <div class="container container_video">
-                <h1 class="video_title">Видео</h1>
+                <h1 class="title video_title">Видео</h1>
                 <div class="video_player">
                     <iframe width="881" height="511" src="https://rutube.ru/play/embed/fc226d23a3fbb41deae23e83be94f019"
                         frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
                         allowFullScreen></iframe>
                 </div>
-
             </div>
         </section>
+        <section class="gallery">
+            <h1 class="title gallery_title">Галерея</h1>
+            <ul class="gallery_list">
+                <li class="gallery_item">
+                    <a href="img/gallery-4.png" class="lightzoom gallery_link"><img src="img/gallery-4.png" alt="" class="gallery_img"></a>
+                </li>
+                <li class="gallery_item">
+                    <a href="img/gallery-5.png" class="lightzoom gallery_link"><img src="img/gallery-5.png" alt="" class="gallery_img"></a>
+                </li>
+                <li class="gallery_item">
+                    <a href="img/gallery-3.png" class="lightzoom gallery_link"><img src="img/gallery-3.png" alt="" class="gallery_img"></a>
+                </li>
+                <li class="gallery_item">
+                    <a href="img/gallery-2.png" class="lightzoom gallery_link"><img src="img/gallery-2.png" alt="" class="gallery_img"></a>
+                </li>
+                <li class="gallery_item">
+                    <a href="img/gallery-1.png" class="lightzoom gallery_link"><img src="img/gallery-1.png" alt="" class="gallery_img"></a>
+                </li>
+                <li class="gallery_item">
+                    <a href="img/gallery-6.png" class="lightzoom gallery_link"><img src="img/gallery-6.png" alt="" class="gallery_img"></a>
+                </li>
+            </ul>
+        </section>
     </main>
+    <script type="text/javascript" src="lightzoom/lightzoom.js"></script>
+    <script type="text/javascript">jQuery('.lightzoom').lightzoom({ speed: 400, viewTitle: true });</script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+  
+
 </body>
 
 </html>

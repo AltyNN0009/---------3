@@ -73,7 +73,7 @@
     display: flex;
 }
 
-.about_title {
+.title {
     color: #E4E4E4;
     font-size: 48px;
     text-align: center;
@@ -100,15 +100,26 @@
     padding: 90px 0 91px;
     justify-content: space-between;
     align-items: center;
-}
+}   
 
-.video_title{
-    color: #E4E4E4;
-    text-align: center;
-    font-size: 48px;
-}
-
-.video_player{
+.video_player {
     margin-left: 10%;
 }
-  
+
+.gallery {
+    background-color: #603400;
+    padding: 70px 0 57px;
+}
+
+.gallery_list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery_item{
+    margin-left: 27px;
+    margin-bottom:  39px;
+}
