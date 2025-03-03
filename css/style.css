@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .header {
     background-color: #2EC600;
 }
@@ -102,6 +107,12 @@
     align-items: center;
 }   
 
+.video_title {
+    color: #E4E4E4;
+    text-align: center;
+    font-size: 48px;
+}
+
 .video_player {
     margin-left: 10%;
 }
@@ -123,3 +134,40 @@
     margin-left: 27px;
     margin-bottom:  39px;
 }
+.nav_link {
+    color:#003f9c;
+    transition: 0.2s;
+}
+
+.nav_link:hover{
+    color: aquamarine;
+}
+
+#scrollToTopBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 174, 255);
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
+
+
+

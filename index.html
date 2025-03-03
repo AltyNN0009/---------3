@@ -14,17 +14,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
+
 <body>
     <header class="header">
         <div class="container container_header">
             <img src="img/Logo.png" alt="logo img" class="logo">
-            <nav class="nav">
+            <nav id="nav" class="nav">
                 <ul class="nav_list">
-                    <li class="nav_item"><a href="#" class="nav_link">Главная</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Об игре</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Видео</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Галерея</a></li>
-                    <li class="nav_item"><a href="#" class="nav_link">Контакты</a></li>
+                    <li class="nav_item"><a href="#nav" class="nav_link">Главная</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">Об игре</a></li>
+                    <li class="nav_item"><a href="#video" class="nav_link">Видео</a></li>
+                    <li class="nav_item"><a href="#gallery" class="nav_link">Галерея</a></li>
+                    <li class="nav_item"><a href="#contacts" class="nav_link">Контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,11 +37,11 @@
                 <div class="hero-block_content">
                     <img src="img/minecraft 1.png   " alt="" class="hero-block_title">
                     <p class="hero-block_text">МАЙНКРАФТ МОЯ ЖИЗНЬ!!!!!!!!!!!!!!!!!!!!</p>
-                    <a href="#" class="hero-block_link"> Скачать бесплатно</a>
+                    <a href="https://tlauncher.org/" class="hero-block_link"> Скачать бесплатно</a>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="container container_about">
                 <h1 class="title about_title">Об игре</h1>
                 <div class="about_content">
@@ -72,7 +73,7 @@
             </div>
 
         </section>
-        <section class="video">
+        <section id="video" class="video">
             <div class="container container_video">
                 <h1 class="title video_title">Видео</h1>
                 <div class="video_player">
@@ -110,6 +111,39 @@
     <script type="text/javascript">jQuery('.lightzoom').lightzoom({ speed: 400, viewTitle: true });</script>
     <script src="js/jquery-3.1.1.min.js"></script>
   
+        <button class="scrollToTopBtn" id="scrollToTopBtn">наверх</button>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+            // Показываем кнопку при прокрутке вниз
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.style.display = "block";
+                } else {
+                    scrollToTopBtn.style.display = "none";
+                }
+            });
+
+            // Плавная анимация прокрутки
+            function smoothScrollToTop() {
+                let position = window.scrollY;
+                if (position > 0) {
+                    window.scrollBy(0, -Math.max(10, position / 10)); // Уменьшаем скорость ближе к верху
+                    requestAnimationFrame(smoothScrollToTop);
+                }
+            }
+
+            // При клике запускаем анимацию
+            scrollToTopBtn.addEventListener("click", function () {
+                requestAnimationFrame(smoothScrollToTop);
+            });
+        });
+ 
+        
+
+    </script>
 
 </body>
 
