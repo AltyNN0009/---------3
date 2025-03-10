@@ -105,7 +105,7 @@
     padding: 90px 0 91px;
     justify-content: space-between;
     align-items: center;
-}   
+}
 
 .video_title {
     color: #E4E4E4;
@@ -122,7 +122,7 @@
     padding: 70px 0 57px;
 }
 
-.gallery_list{
+.gallery_list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -130,16 +130,17 @@
     justify-content: center;
 }
 
-.gallery_item{
+.gallery_item {
     margin-left: 27px;
-    margin-bottom:  39px;
+    margin-bottom: 39px;
 }
+
 .nav_link {
-    color:#003f9c;
+    color: #003f9c;
     transition: 0.2s;
 }
 
-.nav_link:hover{
+.nav_link:hover {
     color: aquamarine;
 }
 
@@ -176,7 +177,7 @@
 
 
 
-#scrollToTopBtn{
+#scrollToTopBtn {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -195,12 +196,66 @@
     background-color: blueviolet;
 }
 
+.burger {
+    width: 80px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+.burger_line{
+    width: 100%;
+    height: 8px;
+    background-color: #D9D9D9;
+    margin-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
+@media (max-width: 834px) {
+    .container{
+        max-width: 580px;
+    }
+    .nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .container_hero-block{
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0;
+    }
+    .hero-block_img{
+        display: none;
+    }
+    .hero-block_content{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-block_title{
+        margin-bottom: 30px;
+    }
+    .hero-block_text{
+        margin-bottom: 30px;
+    }
+    .container_about{
+        padding: 60px 0;
+    }
+    .about_content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about_imgs{
+        align-items: center;
+        flex-direction:column ;
+        margin-left: 0;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .about_title{
+        margin-bottom: 30px;
+    }
+}
