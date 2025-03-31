@@ -117,6 +117,15 @@
     margin-left: 10%;
 }
 
+.video_video{
+    width: 100%; 
+    height: 511px;
+}
+
+
+
+
+
 .gallery {
     background-color: #603400;
     padding: 70px 0 57px;
@@ -258,4 +267,10 @@
     .about_title{
         margin-bottom: 30px;
     }
+    .video_video{
+        height: 511px;
+    }
 }
+
+
+
